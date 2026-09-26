@@ -33,7 +33,7 @@ def buildURLs():
 
     # WRITE
     with open('public/urls.json', 'w+', encoding='utf-8') as file:
-        json.dump(externalData, file)
+        json.dump(externalData, file, indent=2)
 
 if __name__ == "__main__":
     buildWeights()
