@@ -4,7 +4,7 @@ import json
 WEIGHTS_URL = "https://athena.wynntils.com/cache/get/itemWeights"
 URLS_URL = "https://raw.githubusercontent.com/Wynntils/Static-Storage/refs/heads/main/Data-Storage/urls.json"
 
-WYNNCYCLE_WEIGHTS_URL = "PLACEHOLDER"
+WYNNCYCLE_WEIGHTS_URL = "https://raw.githubusercontent.com/pxlpkr/wynncycle-sources/refs/heads/main/public/item_weights.json"
 
 def buildWeights():
     # EXTERNAL
