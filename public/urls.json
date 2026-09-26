@@ -368,7 +368,7 @@
   {
     "id": "dataStaticUrls",
     "path": "Data-Storage/urls.json",
-    "url": "https://cdn.wynntils.com/static/Data-Storage/urls.json"
+    "url": "https://raw.githubusercontent.com/pxlpkr/wynncycle-sources/refs/heads/main/public/urls.json"
   },
   {
     "arguments": [

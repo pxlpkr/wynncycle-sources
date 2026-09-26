@@ -5,6 +5,7 @@ WEIGHTS_URL = "https://athena.wynntils.com/cache/get/itemWeights"
 URLS_URL = "https://raw.githubusercontent.com/Wynntils/Static-Storage/refs/heads/main/Data-Storage/urls.json"
 
 WYNNCYCLE_WEIGHTS_URL = "https://raw.githubusercontent.com/pxlpkr/wynncycle-sources/refs/heads/main/public/item_weights.json"
+WYNNCYCLE_URLS_URL = "https://raw.githubusercontent.com/pxlpkr/wynncycle-sources/refs/heads/main/public/urls.json"
 
 def buildWeights():
     # EXTERNAL
@@ -30,6 +31,9 @@ def buildURLs():
     # CONVERT
     for obj in [i for i in externalData if "id" in i and i["id"] == "dataAthenaItemWeights"]:
         obj["url"] = WYNNCYCLE_WEIGHTS_URL
+
+    for obj in [i for i in externalData if "id" in i and i["id"] == "dataStaticUrls"]:
+            obj["url"] = WYNNCYCLE_URLS_URL
 
     # WRITE
     with open('public/urls.json', 'w+', encoding='utf-8') as file:
